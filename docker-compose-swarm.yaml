@@ -7,7 +7,7 @@ services:
   ports:
    - 8080:80
   volumes:
-   - "${PROJECT_ROOT}:/var/www/html:ro"
+   - "/home/vagrant/bgapp:/usr/share/nginx/html:ro"
   networks:
    - app-network
  db:
